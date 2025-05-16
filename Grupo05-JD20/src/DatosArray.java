@@ -14,6 +14,10 @@ public class DatosArray {
     }
 
     // Métodos
+    public String ObtenerFraseMistica(int clave) {
+        return clave == numeroMagico ? fraseMistica : "Clave incorrecta";
+    }
+
     private void GenerarArray(){
         for(int i = 0; i < 1000; i++){
             numeros[i] = 1000 + (int) (Math.random() * 9000);
@@ -35,7 +39,4 @@ public class DatosArray {
         return numeroMagico;
     }
 
-    public String getFraseMistica() {
-        return fraseMistica;
-    }
 }
