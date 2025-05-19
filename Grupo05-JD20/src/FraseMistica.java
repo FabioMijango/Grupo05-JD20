@@ -1,3 +1,7 @@
+
+/**
+ * Clase FraseMistica que contiene un conjunto de frases místicas y permite obtener una de ellas de forma aleatoria.
+ */
 public class FraseMistica {
     //Frases místicas
     private static final String[] frasesMisticas = {
@@ -13,7 +17,12 @@ public class FraseMistica {
             "Solo bajo la lluvia de estrellas negras, la fuente del eco eterno mostrará su verdadero rostro."
     };
 
-    // Métodos para obtener una frase mística aleatoria
+
+    /**
+     * Obtiene una frase mística aleatoria del conjunto de frases disponibles.
+     *
+     * @return Una frase mística seleccionada aleatoriamente.
+     */
     public static String obtenerFraseMistica() {
         int indiceAleatorio = (int) (Math.random() * frasesMisticas.length);
         return frasesMisticas[indiceAleatorio];
