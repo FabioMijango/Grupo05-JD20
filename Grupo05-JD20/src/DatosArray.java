@@ -5,8 +5,7 @@
  */
 public class DatosArray {
     // Atributos
-    private Integer[] numeros = new Integer[1000];
-    private Integer numeroMagico = 0;
+    private int[] numeros = new int[1000];
     private String fraseMistica = "";
 
     /**
@@ -15,7 +14,6 @@ public class DatosArray {
      */
     public DatosArray(){
         GenerarArray();
-        SelectNum();
         fraseMistica = FraseMistica.obtenerFraseMistica();
     }
 
@@ -26,7 +24,7 @@ public class DatosArray {
      * @return La frase mística si la clave es correcta, de lo contrario "Clave incorrecta".
      */
     public String ObtenerFraseMistica(int clave) {
-        return clave == numeroMagico ? fraseMistica : "Clave incorrecta";
+        return  fraseMistica;
     }
 
     /**
@@ -39,30 +37,14 @@ public class DatosArray {
 
     }
 
-    /**
-     * Selecciona un número mágico aleatorio del array de números.
-     */
-    private void SelectNum(){
-        int seleccion = (int) (Math.random() * 1000);
-        numeroMagico = numeros[seleccion];
-    }
 
     /**
      * Obtiene el array de números generados.
      *
      * @return Array de números generados.
      */
-    public Integer[] getNumeros() {
+    public int[] getNumeros() {
         return numeros;
-    }
-
-    /**
-     * Obtiene el número mágico seleccionado.
-     *
-     * @return Número mágico seleccionado.
-     */
-    public Integer getNumeroMagico() {
-        return numeroMagico;
     }
 
 }
