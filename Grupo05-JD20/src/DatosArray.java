@@ -23,7 +23,7 @@ public class DatosArray {
      * @param clave Clave proporcionada para verificar.
      * @return La frase mística si la clave es correcta, de lo contrario "Clave incorrecta".
      */
-    public String ObtenerFraseMistica(int clave) {
+    public String ObtenerFraseMistica() {
         return  fraseMistica;
     }
 

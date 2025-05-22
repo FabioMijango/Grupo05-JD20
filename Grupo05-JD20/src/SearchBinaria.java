@@ -68,9 +68,6 @@ public class SearchBinaria {
      * @return Un mensaje indicando si el elemento fue encontrado o no.
      */
     public int obtenerResultadoBusqueda() {
-        if (indice == -1) {
-            return null;
-        }
-        return indice
+        return indice;
     }
 }
